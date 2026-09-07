@@ -1,0 +1,16 @@
+Requisitos:
+- Tener instalado la ultima version de node.js
+- Crear un .env con lo siguiente:
+PGHOST=localhost
+PGUSER=postgres
+PGPASSWORD=su_contraseña
+PGDATABASE=platotipico_db
+PGPORT=5432
+- Ejecutar el esquemita.sql para llenar la tabla
+
+* Instalar las dependecias:
+    npm install
+* Ejecutar el proyecto:
+    npm start
+* Direccion en la cual ver
+    http://localhost:3000/cliente.html
