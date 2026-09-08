@@ -1,11 +1,11 @@
 :root {
-  --fondo: #FAF7F2;
+  --fondo: #F0FBFF;
   --panel: #FFFFFF;
-  --texto: #2B2620;
-  --texto-suave: #6B6255;
-  --acento: #4B5C3D;
-  --acento-oscuro: #37452C;
-  --borde: #E4DDD1;
+  --texto: #000000;
+  --texto-suave: #333333;
+  --acento: #00B4D8;
+  --acento-oscuro: #0090B0;
+  --borde: #B8ECF7;
 }
 
 * {
@@ -17,18 +17,17 @@ body {
   padding: 48px 24px;
   background: var(--fondo);
   color: var(--texto);
-  font-family: "Georgia", "Iowan Old Style", serif;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 h1 {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 2.1rem;
+  font-weight: 700;
   letter-spacing: 0.02em;
   margin: 0 0 32px 0;
-  color: var(--acento-oscuro);
+  color: var(--texto);
 }
 
 table {
@@ -37,7 +36,7 @@ table {
   border-collapse: collapse;
   background: var(--panel);
   border: 1px solid var(--borde);
-  border-radius: 6px;
+  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -45,8 +44,8 @@ thead th {
   text-align: left;
   padding: 12px 16px;
   background: var(--acento);
-  color: var(--panel);
-  font-weight: 500;
+  color: var(--texto);
+  font-weight: 600;
   font-size: 0.95rem;
 }
 
@@ -54,20 +53,22 @@ tbody td {
   padding: 10px 16px;
   border-top: 1px solid var(--borde);
   font-size: 0.95rem;
+  color: var(--texto);
 }
 
 tbody tr:nth-child(even) {
-  background: #F6F2EA;
+  background: #E7F9FF;
 }
 
 #botonsito-agregar {
   margin-top: 24px;
-  padding: 10px 22px;
-  border: 1px solid var(--acento-oscuro);
+  padding: 10px 24px;
+  border: 2px solid var(--texto);
   border-radius: 4px;
   background: var(--acento);
-  color: var(--panel);
+  color: var(--texto);
   font-family: inherit;
+  font-weight: 700;
   font-size: 0.95rem;
   cursor: pointer;
   transition: background 0.15s ease;
@@ -78,7 +79,7 @@ tbody tr:nth-child(even) {
 }
 
 #botonsito-agregar:focus-visible {
-  outline: 2px solid var(--acento-oscuro);
+  outline: 2px solid var(--texto);
   outline-offset: 2px;
 }
 
@@ -87,13 +88,4 @@ tbody tr:nth-child(even) {
   color: var(--texto-suave);
   font-size: 0.9rem;
   min-height: 1.2em;
-}
-
-@media (max-width: 480px) {
-  body {
-    padding: 32px 16px;
-  }
-  table {
-    max-width: 100%;
-  }
 }
